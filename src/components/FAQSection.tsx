@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -32,40 +33,38 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            الأسئلة <span className="text-invoice-blue-600">الشائعة</span>
+    <section className="py-24 clean-gradient">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-blue-gray-900 mb-6">
+            الأسئلة <span className="text-blue-gray-700">الشائعة</span>
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-xl text-blue-gray-600 font-medium">
             الإجابة على أهم الأسئلة التي تخطر ببالك
           </p>
         </div>
         
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl shadow-md mb-4 overflow-hidden border border-gray-200"
+              className="bg-white rounded-2xl soft-shadow mb-4 overflow-hidden border border-blue-gray-100"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full text-right p-6 hover:bg-gray-50 transition-colors duration-200 flex justify-between items-center"
+                className="w-full text-right p-8 hover:bg-blue-gray-50 transition-colors duration-200 flex justify-between items-center"
               >
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-semibold text-blue-gray-900 text-lg">
                   {faq.question}
                 </span>
-                <span className={`text-invoice-blue-600 transition-transform duration-200 ${
+                <ChevronDown className={`text-blue-gray-600 transition-transform duration-200 w-5 h-5 ${
                   openIndex === index ? 'rotate-180' : ''
-                }`}>
-                  ⌄
-                </span>
+                }`} />
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-6 border-t border-gray-100 animate-fade-in">
-                  <p className="text-gray-700 leading-relaxed pt-4">
+                <div className="px-8 pb-8 border-t border-blue-gray-100 animate-fade-in">
+                  <p className="text-blue-gray-700 leading-relaxed pt-6 font-medium">
                     {faq.answer}
                   </p>
                 </div>
