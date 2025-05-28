@@ -12,8 +12,12 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="clean-card rounded-2xl p-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-32 h-32 bg-slate-100 rounded-2xl flex items-center justify-center">
-                <span className="text-4xl">💼</span>
+              <div className="w-32 h-32 rounded-2xl flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/29886080-cb9d-403c-ac79-4d7484a756e9.png" 
+                  alt="فريق تقني متخصص"
+                  className="w-28 h-28 object-contain"
+                />
               </div>
               
               <div className="flex-1 text-center md:text-right">
