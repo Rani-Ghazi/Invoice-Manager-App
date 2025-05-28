@@ -17,45 +17,45 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-24 clean-gradient relative overflow-hidden">
+    <section className="py-20 dreamy-gradient-alt relative overflow-hidden" id="pricing">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-blue-gray-900 mb-6">
-            سعر واضح، <span className="text-blue-gray-700">بدون مفاجآت</span>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
+            سعر واضح، <span className="text-slate-600">بدون مفاجآت</span>
           </h2>
-          <p className="text-xl text-blue-gray-600 font-medium">
+          <p className="text-lg text-slate-600 font-normal">
             استثمار لمرة واحدة يوفر عليك الوقت والمال
           </p>
         </div>
         
-        <div className="max-w-lg mx-auto">
-          <div className="bg-white rounded-3xl soft-shadow p-10 border border-blue-gray-100 relative">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-soft-green-600 text-white px-8 py-3 rounded-full font-semibold">
+        <div className="max-w-md mx-auto">
+          <div className="clean-card rounded-2xl p-8 relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <span className="bg-emerald-500 text-white px-6 py-2 rounded-full font-medium text-sm">
                 العرض الأفضل
               </span>
             </div>
             
-            <div className="text-center mb-10">
-              <div className="text-6xl font-bold text-blue-gray-800 mb-4">
+            <div className="text-center mb-8">
+              <div className="text-5xl font-medium text-slate-800 mb-3">
                 80 ريال
               </div>
-              <div className="text-blue-gray-600 text-xl font-medium">
+              <div className="text-slate-600 text-lg font-normal">
                 دفعة واحدة فقط
               </div>
-              <div className="text-blue-gray-500 mt-2">
+              <div className="text-slate-500 mt-1 text-sm">
                 بدون اشتراكات شهرية
               </div>
             </div>
             
-            <div className="mb-10">
-              <h3 className="font-semibold text-blue-gray-800 mb-6 text-center text-lg">
+            <div className="mb-8">
+              <h3 className="font-medium text-slate-800 mb-4 text-center">
                 يشمل الباقة:
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {includes.map((item, index) => (
-                  <li key={index} className="flex items-center text-blue-gray-700 font-medium">
-                    <CheckCircle className="text-soft-green-600 ml-3 w-5 h-5" />
+                  <li key={index} className="flex items-center text-slate-700 font-normal text-sm">
+                    <CheckCircle className="text-emerald-500 ml-3 w-4 h-4" />
                     {item}
                   </li>
                 ))}
@@ -64,15 +64,11 @@ const PricingSection = () => {
             
             <Button 
               onClick={handleWhatsAppClick}
-              className="w-full bg-blue-gray-700 hover:bg-blue-gray-800 text-white py-4 text-lg rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-3"
+              className="w-full bg-slate-700 hover:bg-slate-800 text-white py-3 text-base font-medium transition-colors flex items-center justify-center gap-3"
             >
               <MessageSquare className="w-5 h-5" />
               احصل على نظامك الآن
             </Button>
-            
-            <div className="text-center mt-6 text-blue-gray-600 font-medium">
-              📱 الرقم: 0096895454284
-            </div>
           </div>
         </div>
       </div>

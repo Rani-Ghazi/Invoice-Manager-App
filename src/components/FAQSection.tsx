@@ -33,38 +33,38 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-24 clean-gradient">
+    <section className="py-20 dreamy-gradient-alt">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-blue-gray-900 mb-6">
-            الأسئلة <span className="text-blue-gray-700">الشائعة</span>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
+            الأسئلة <span className="text-slate-600">الشائعة</span>
           </h2>
-          <p className="text-xl text-blue-gray-600 font-medium">
+          <p className="text-lg text-slate-600 font-normal">
             الإجابة على أهم الأسئلة التي تخطر ببالك
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl soft-shadow mb-4 overflow-hidden border border-blue-gray-100"
+              className="clean-card rounded-xl mb-3 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full text-right p-8 hover:bg-blue-gray-50 transition-colors duration-200 flex justify-between items-center"
+                className="w-full text-right p-6 hover:bg-slate-50/50 transition-colors duration-200 flex justify-between items-center"
               >
-                <span className="font-semibold text-blue-gray-900 text-lg">
+                <span className="font-medium text-slate-800">
                   {faq.question}
                 </span>
-                <ChevronDown className={`text-blue-gray-600 transition-transform duration-200 w-5 h-5 ${
+                <ChevronDown className={`text-slate-600 transition-transform duration-200 w-5 h-5 ${
                   openIndex === index ? 'rotate-180' : ''
                 }`} />
               </button>
               
               {openIndex === index && (
-                <div className="px-8 pb-8 border-t border-blue-gray-100 animate-fade-in">
-                  <p className="text-blue-gray-700 leading-relaxed pt-6 font-medium">
+                <div className="px-6 pb-6 border-t border-slate-200/50">
+                  <p className="text-slate-700 leading-relaxed pt-4 font-normal">
                     {faq.answer}
                   </p>
                 </div>

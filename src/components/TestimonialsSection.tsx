@@ -4,56 +4,52 @@ import { Star } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "سعيد",
-      profession: "فني كهرباء",
-      comment: "ريحني من الطباعة وخلاني أبان محترف قدام الزبون",
+      business: "شركة مقاولات",
+      comment: "كنت أعاني من إعداد الفواتير يدوياً، الآن أرسل فاتورة احترافية خلال دقائق",
       rating: 5
     },
     {
-      name: "أحمد",
-      profession: "صاحب ورشة",
-      comment: "النظام سهل جداً، وأقدر أرسل الفاتورة بالواتساب على طول",
+      business: "فني صيانة",
+      comment: "النظام ساعدني أبدو أكثر احترافية أمام العملاء، والدفعات صارت أسرع",
       rating: 5
     },
     {
-      name: "فاطمة",
-      profession: "مصممة داخلية",
-      comment: "عجبني التصميم المخصص، الفاتورة تطلع باسمي وشعاري",
+      business: "مصمم حر",
+      comment: "أحب التصميم المخصص، الفاتورة تحمل شعاري وتعكس هويتي المهنية",
       rating: 5
     }
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-white" id="testimonials">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-blue-gray-900 mb-6">
-            آراء <span className="text-blue-gray-700">عملائنا</span>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
+            آراء <span className="text-slate-600">عملائنا</span>
           </h2>
-          <p className="text-xl text-blue-gray-600 font-medium">
+          <p className="text-lg text-slate-600 font-normal">
             ماذا يقول أصحاب الأعمال عن تجربتهم
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-blue-gray-50 p-8 rounded-2xl soft-shadow border border-blue-gray-100"
+              className="clean-card p-6 rounded-xl"
             >
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                 ))}
               </div>
               
-              <p className="text-blue-gray-700 mb-6 italic leading-relaxed font-medium text-lg">
+              <p className="text-slate-700 mb-4 leading-relaxed font-normal">
                 "{testimonial.comment}"
               </p>
               
-              <div className="border-t border-blue-gray-200 pt-6">
-                <div className="font-semibold text-blue-gray-800 text-lg">{testimonial.name}</div>
-                <div className="text-blue-gray-600 font-medium">{testimonial.profession}</div>
+              <div className="border-t border-slate-200 pt-4">
+                <div className="font-medium text-slate-800">{testimonial.business}</div>
               </div>
             </div>
           ))}

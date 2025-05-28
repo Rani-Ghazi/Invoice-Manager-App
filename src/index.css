@@ -91,7 +91,7 @@
   }
 
   body {
-    @apply bg-blue-gray-50 text-blue-gray-900 font-tajawal;
+    @apply bg-slate-50 text-slate-800 font-tajawal;
     direction: rtl;
   }
   
@@ -101,15 +101,33 @@
 }
 
 @layer components {
-  .clean-gradient {
-    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 30%, #f1f5f9 100%);
+  .dreamy-gradient {
+    background: linear-gradient(-45deg, #f0f9ff, #e0f2fe, #f8fafc, #f1f5f9);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
   }
   
-  .soft-shadow {
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  .dreamy-gradient-alt {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 25%, #f0f9ff 50%, #f1f5f9 75%, #ffffff 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease-in-out infinite;
   }
   
-  .hover-soft-shadow {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .clean-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(226, 232, 240, 0.5);
   }
 }
