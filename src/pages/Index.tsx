@@ -1,4 +1,5 @@
 
+import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import PricingSection from "@/components/PricingSection";
@@ -10,13 +11,24 @@ import CTASection from "@/components/CTASection";
 const Index = () => {
   return (
     <div className="min-h-screen font-tajawal" dir="rtl">
-      <HeroSection />
-      <FeaturesSection />
-      <PricingSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <AboutSection />
-      <CTASection />
+      <Header />
+      <div className="pt-16"> {/* Add padding for fixed header */}
+        <HeroSection />
+        <div id="features">
+          <FeaturesSection />
+        </div>
+        <div id="pricing">
+          <PricingSection />
+        </div>
+        <div id="testimonials">
+          <TestimonialsSection />
+        </div>
+        <FAQSection />
+        <div id="about">
+          <AboutSection />
+        </div>
+        <CTASection />
+      </div>
     </div>
   );
 };
