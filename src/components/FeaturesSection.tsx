@@ -1,42 +1,42 @@
 
-import { FileText, CreditCard, Send, Shield, Smartphone, BarChart3, Settings } from "lucide-react";
+import { FileText, Smartphone, Printer, Send, BarChart3, Shield, Settings } from "lucide-react";
 
 const FeaturesSection = () => {
   const features = [
     {
       icon: FileText,
-      title: "إنشاء فواتير احترافية باسمك وشعارك",
-      description: "تصميم مخصص يعكس هويتك التجارية"
-    },
-    {
-      icon: CreditCard,
-      title: "دعم كامل للإيصالات والمدفوعات الجزئية",
-      description: "تتبع المدفوعات والمبالغ المستحقة بسهولة"
-    },
-    {
-      icon: Send,
-      title: "ملفات PDF قابلة للإرسال عبر واتساب أو الإيميل",
-      description: "إرسال فوري للفواتير دون تعقيد"
-    },
-    {
-      icon: Shield,
-      title: "تخزين آمن للبيانات ونسخ احتياطية سحابية",
-      description: "بياناتك محفوظة ومؤمنة دائماً"
+      title: "فواتير إلكترونية احترافية بدون تعقيد",
+      description: "وداعًا للأوراق والفواتير اليدوية. أنشئ، أرسل، وادير فواتيرك بالكامل بشكل رقمي من جوالك أو الكمبيوتر بسهولة تامة."
     },
     {
       icon: Smartphone,
-      title: "لوحة تحكم بسيطة من الجوال أو المتصفح",
-      description: "إدارة سهلة من أي مكان وفي أي وقت"
+      title: "إدارة متكاملة من أي مكان",
+      description: "سواء كنت في المكتب أو في الميدان، تقدر تصدر فواتيرك، عروض الأسعار، وتتبع المدفوعات والمصروفات والربح والخسارة بثوانٍ معدودة."
+    },
+    {
+      icon: Printer,
+      title: "ميزة الطباعة متاحة",
+      description: "لو تحتاج نسخة ورقية، اطبع الفواتير بسهولة بجودة احترافية، بدون الحاجة لاستخدام برامج إضافية."
+    },
+    {
+      icon: Send,
+      title: "إرسال مباشر عبر واتساب والإيميل",
+      description: "شارك فواتيرك فورًا مع عملائك بدون تعقيد أو تأخير."
     },
     {
       icon: BarChart3,
-      title: "تقارير شهرية واختيارية بصيغة Excel",
-      description: "تحليل مبيعاتك ومتابعة أداء عملك"
+      title: "تقارير مالية دقيقة بضغطة زر",
+      description: "تابع أداء شركتك بوضوح مع تقارير شهرية وتحليلات مفصلة تساعدك في اتخاذ القرارات الصحيحة."
+    },
+    {
+      icon: Shield,
+      title: "أمان ونسخ احتياطية سحابية",
+      description: "بياناتك محفوظة آمنًا، ويمكنك استرجاعها في أي وقت دون خوف من فقدانها."
     },
     {
       icon: Settings,
-      title: "إعداد لمرة واحدة، مع دعم وتعديلات مجانية أول شهر",
-      description: "نساعدك في البداية حتى تتقن النظام"
+      title: "إعداد سريع مع دعم مجاني لمدة شهر",
+      description: "نوفر لك كل الدعم حتى تتقن النظام بدون مشاكل."
     }
   ];
 
@@ -45,26 +45,26 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
-            لماذا <span className="text-slate-600">Invoice Manager</span>؟
+            أبرز مزايا <span className="text-slate-600">Invoice Manager</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto font-normal">
-            كل ما تحتاجه لإدارة فواتيرك بشكل احترافي ومنظم
+            الفواتير الإلكترونية بكل بساطة
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="clean-card p-6 rounded-xl transition-all duration-300 group"
+              className="clean-card p-8 rounded-2xl transition-all duration-300 group hover:scale-[1.02] border border-slate-100"
             >
-              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 text-slate-600" />
+              <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl flex items-center justify-center mb-6 group-hover:from-slate-200 group-hover:to-slate-300 transition-all duration-300">
+                <feature.icon className="w-8 h-8 text-slate-600" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium text-slate-800 mb-3 leading-tight">
+              <h3 className="text-xl font-medium text-slate-800 mb-4 leading-tight">
                 {feature.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed font-normal text-sm">
+              <p className="text-slate-600 leading-relaxed font-normal">
                 {feature.description}
               </p>
             </div>

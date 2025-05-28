@@ -1,21 +1,19 @@
 
-import { Star } from "lucide-react";
-
 const TestimonialsSection = () => {
   const testimonials = [
     {
       business: "شركة مقاولات",
-      comment: "كنت أعاني من إعداد الفواتير يدوياً، الآن أرسل فاتورة احترافية خلال دقائق",
+      comment: "كنت أعاني من إعداد الفواتير يدوياً والتأخير في إرسالها للعملاء، الآن أرسل فاتورة احترافية خلال دقائق وأتابع المدفوعات بسهولة",
       rating: 5
     },
     {
       business: "فني صيانة",
-      comment: "النظام ساعدني أبدو أكثر احترافية أمام العملاء، والدفعات صارت أسرع",
+      comment: "النظام ساعدني أبدو أكثر احترافية أمام العملاء، والدفعات صارت أسرع لأن الفواتير واضحة ومنظمة",
       rating: 5
     },
     {
       business: "مصمم حر",
-      comment: "أحب التصميم المخصص، الفاتورة تحمل شعاري وتعكس هويتي المهنية",
+      comment: "أحب التصميم المخصص، الفاتورة تحمل شعاري وتعكس هويتي المهنية. وأقدر أشتغل من أي مكان بالجوال",
       rating: 5
     }
   ];
@@ -32,24 +30,27 @@ const TestimonialsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="clean-card p-6 rounded-xl"
+              className="clean-card p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-300"
             >
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                ))}
+              <div className="flex items-center mb-6">
+                <div className="flex">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-amber-400 text-lg">★</span>
+                  ))}
+                </div>
               </div>
               
-              <p className="text-slate-700 mb-4 leading-relaxed font-normal">
+              <p className="text-slate-700 mb-6 leading-relaxed font-normal text-lg">
                 "{testimonial.comment}"
               </p>
               
-              <div className="border-t border-slate-200 pt-4">
-                <div className="font-medium text-slate-800">{testimonial.business}</div>
+              <div className="border-t border-slate-200 pt-6">
+                <div className="font-medium text-slate-800 text-lg">{testimonial.business}</div>
+                <div className="text-slate-500 text-sm mt-1">عميل راضٍ</div>
               </div>
             </div>
           ))}
