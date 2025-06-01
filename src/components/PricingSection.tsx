@@ -8,12 +8,12 @@ const PricingSection = () => {
   };
 
   const includes = [
-    "إعداد النظام كاملاً",
-    "تصميم مخصص باسمك وشعارك",
-    "دعم كامل أول شهر",
-    "شرح بالفيديو",
-    "تعديلات مجانية أول شهر",
-    "تدريب شخصي على النظام"
+    "إعداد النظام بالكامل",
+    "تصميم فواتيرك باسمك وشعارك",
+    "دعم شخصي أول شهر",
+    "فيديو شرح + تعديلات مجانية",
+    "تدريب شخصي على النظام",
+    "نسخ احتياطية تلقائية"
   ];
 
   return (
@@ -21,10 +21,10 @@ const PricingSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
-            سعر واضح، <span className="text-slate-600">بدون مفاجآت</span>
+            لا اشتراكات، <span className="text-slate-600">لا دفعات متكررة</span>
           </h2>
           <p className="text-lg text-slate-600 font-normal">
-            استثمار لمرة واحدة يوفر عليك الوقت والمال
+            80 ريال سنوياً - مرة وحدة وتنساها
           </p>
         </div>
         
@@ -41,16 +41,16 @@ const PricingSection = () => {
                 80 ريال
               </div>
               <div className="text-slate-600 text-lg font-normal">
-                دفعة واحدة فقط
+                اشتراك سنوي
               </div>
               <div className="text-slate-500 mt-1 text-sm">
-                بدون اشتراكات شهرية
+                مرة وحدة وتنساها
               </div>
             </div>
             
             <div className="mb-8">
               <h3 className="font-medium text-slate-800 mb-4 text-center">
-                يشمل الباقة:
+                السعر يشمل:
               </h3>
               <ul className="space-y-3">
                 {includes.map((item, index) => (

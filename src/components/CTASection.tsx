@@ -12,15 +12,15 @@ const CTASection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center text-white max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-light mb-8">
-            جاهز تبدأ؟
+            جاهز تبسّط شغلك؟
           </h2>
           <p className="text-xl md:text-2xl mb-12 text-slate-300 font-light">
-            احصل على نظامك الآن عبر الواتساب 👇
+            احصل على نظامك الآن عبر واتساب 👇
           </p>
           
           <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12 border border-white/20">
-            <div className="text-4xl font-light mb-3">80 ريال فقط</div>
-            <div className="text-slate-300 font-light text-lg">دفعة واحدة - بدون اشتراكات</div>
+            <div className="text-4xl font-light mb-3">80 ريال سنوياً</div>
+            <div className="text-slate-300 font-light text-lg">مرة وحدة وتنساها</div>
           </div>
           
           <Button 
@@ -32,7 +32,7 @@ const CTASection = () => {
           </Button>
           
           <div className="text-slate-400 font-light text-lg">
-            ✅ دعم مجاني أول شهر | ✅ تعديلات مجانية | ✅ شرح بالفيديو
+            ✅ دعم كامل | ✅ تصميم مخصص لشركتك | ✅ شرح بالفيديو
           </div>
         </div>
       </div>
