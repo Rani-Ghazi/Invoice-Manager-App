@@ -19,7 +19,7 @@ const PricingSection = () => {
   return (
     <section className="py-20 dreamy-gradient-alt relative overflow-hidden" id="pricing">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
             اشتراك سنوي، <span className="text-slate-600">بدون تعقيدات</span>
           </h2>
@@ -29,15 +29,15 @@ const PricingSection = () => {
         </div>
         
         <div className="max-w-md mx-auto">
-          <div className="clean-card rounded-2xl p-8 relative">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <span className="bg-emerald-500 text-white px-6 py-2 rounded-full font-medium text-sm">
+          <div className="clean-card rounded-2xl p-8 relative animate-bounce-in hover:scale-[1.02] transition-all duration-500 hover:shadow-2xl hover-glow">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <span className="bg-emerald-500 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-emerald-600 transition-colors duration-300">
                 العرض الأفضل
               </span>
             </div>
             
-            <div className="text-center mb-8">
-              <div className="text-5xl font-medium text-slate-800 mb-3">
+            <div className="text-center mb-8 animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <div className="text-5xl font-medium text-slate-800 mb-3 hover:text-blue-600 transition-colors duration-500">
                 80 ريال
               </div>
               <div className="text-slate-600 text-lg font-normal">
@@ -46,13 +46,13 @@ const PricingSection = () => {
             </div>
             
             <div className="mb-8">
-              <h3 className="font-medium text-slate-800 mb-4 text-center">
+              <h3 className="font-medium text-slate-800 mb-4 text-center animate-fade-in" style={{animationDelay: '0.4s'}}>
                 السعر يشمل:
               </h3>
               <ul className="space-y-3">
                 {includes.map((item, index) => (
-                  <li key={index} className="flex items-center text-slate-700 font-normal text-sm">
-                    <CheckCircle className="text-emerald-500 ml-3 w-4 h-4" />
+                  <li key={index} className="flex items-center text-slate-700 font-normal text-sm animate-fade-in hover:text-slate-800 transition-colors duration-300" style={{animationDelay: `${0.5 + index * 0.1}s`}}>
+                    <CheckCircle className="text-emerald-500 ml-3 w-4 h-4 hover:scale-110 transition-transform duration-300" />
                     {item}
                   </li>
                 ))}
@@ -61,9 +61,10 @@ const PricingSection = () => {
             
             <Button 
               onClick={handleWhatsAppClick}
-              className="w-full bg-slate-700 hover:bg-slate-800 text-white py-3 text-base font-medium transition-colors flex items-center justify-center gap-3"
+              className="w-full bg-slate-700 hover:bg-slate-800 text-white py-3 text-base font-medium transition-all duration-500 flex items-center justify-center gap-3 hover:scale-105 hover:shadow-xl animate-fade-in"
+              style={{animationDelay: '1s'}}
             >
-              <MessageSquare className="w-5 h-5" />
+              <MessageSquare className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               احصل على نظامك الآن
             </Button>
           </div>

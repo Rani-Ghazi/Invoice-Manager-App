@@ -38,7 +38,7 @@ const FeaturesSection = () => {
   return (
     <section className="py-20 bg-white relative" id="features">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
             أبرز مزايا <span className="text-slate-600">Invoice Manager</span>
           </h2>
@@ -51,15 +51,16 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="clean-card p-8 rounded-2xl transition-all duration-300 group hover:scale-[1.02] border border-slate-100"
+              className="clean-card p-8 rounded-2xl transition-all duration-500 group hover:scale-[1.05] border border-slate-100 animate-fade-in hover:shadow-2xl hover-glow"
+              style={{animationDelay: `${index * 0.15}s`}}
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mb-6 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300">
-                <feature.icon className="w-8 h-8 text-blue-600" strokeWidth={1.5} />
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mb-6 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <feature.icon className="w-8 h-8 text-blue-600 transition-transform duration-300 group-hover:scale-110" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-medium text-slate-800 mb-4 leading-tight">
+              <h3 className="text-xl font-medium text-slate-800 mb-4 leading-tight group-hover:text-blue-600 transition-colors duration-300">
                 {feature.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed font-normal">
+              <p className="text-slate-600 leading-relaxed font-normal group-hover:text-slate-700 transition-colors duration-300">
                 {feature.description}
               </p>
             </div>

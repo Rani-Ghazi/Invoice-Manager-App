@@ -15,10 +15,6 @@ const FAQSection = () => {
       answer: "يشمل الاشتراك إعداد النظام كاملاً، تصميم مخصص لشركتك، دعم فني مستمر، تحديثات دورية، ونسخ احتياطية آمنة."
     },
     {
-      question: "أقدر أعدّل على النظام لاحقاً؟",
-      answer: "نعم، أول شهر التعديلات والدعم مجاني تماماً. بعد ذلك يمكن التعديل مقابل رسوم رمزية."
-    },
-    {
       question: "أقدر أطبع الفاتورة؟",
       answer: "نعم، يمكنك طباعة الفاتورة أو إرسالها كملف PDF عبر الواتساب أو الإيميل."
     },
@@ -43,7 +39,7 @@ const FAQSection = () => {
   return (
     <section className="py-20 dreamy-gradient-alt">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
             الأسئلة <span className="text-slate-600">الشائعة</span>
           </h2>
@@ -56,7 +52,8 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="clean-card rounded-xl mb-3 overflow-hidden"
+              className="clean-card rounded-xl mb-3 overflow-hidden animate-fade-in hover:scale-[1.02] transition-all duration-300"
+              style={{animationDelay: `${index * 0.1}s`}}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -71,7 +68,7 @@ const FAQSection = () => {
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-6 border-t border-slate-200/50">
+                <div className="px-6 pb-6 border-t border-slate-200/50 animate-fade-in">
                   <p className="text-slate-700 leading-relaxed pt-4 font-normal">
                     {faq.answer}
                   </p>
