@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-white" id="testimonials">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16 animate-modern-fade-in">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
             آراء <span className="text-slate-600">عملائنا</span>
           </h2>
@@ -49,8 +49,8 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="clean-card p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-500 hover:scale-[1.03] hover:shadow-xl animate-fade-in group"
-              style={{animationDelay: `${index * 0.1}s`}}
+              className="clean-card p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-500 hover:scale-[1.03] hover:shadow-xl animate-slide-up-bounce group"
+              style={{animationDelay: `${0.1 + index * 0.1}s`}}
             >
               <div className="flex items-center mb-6">
                 <div className="flex">

@@ -13,31 +13,31 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content */}
           <div className="text-center lg:text-right">
-            <div className="mb-8 animate-fade-in">
+            <div className="mb-8 animate-modern-fade-in">
               <span className="inline-flex items-center clean-card text-slate-600 px-6 py-3 rounded-full text-sm font-medium border border-slate-200 hover:scale-105 transition-transform duration-300">
                 ✨ موثوق من أكثر من 500 عميل
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-slate-800 mb-8 leading-tight hover:scale-[1.02] transition-transform duration-500 animate-fade-in animate-delay-200">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-slate-800 mb-8 leading-tight hover:scale-[1.02] transition-transform duration-500 animate-slide-up-bounce animate-delay-200">
               فواتير إلكترونية باسم نشاطك...{" "}
               <span className="text-slate-600 font-normal">
                 بشكل احترافي وسهل
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed font-light max-w-3xl mx-auto lg:mx-0 animate-slide-up animate-delay-400">
+            <p className="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed font-light max-w-3xl mx-auto lg:mx-0 animate-modern-fade-in animate-delay-400">
               أنشئ، أرسل، وتابع فواتيرك من جوالك – بدون ورق ولا وجع راس
             </p>
             
-            <div className="clean-card rounded-3xl p-10 mb-12 border border-slate-200 hover:shadow-xl transition-all duration-300 animate-scale-in animate-delay-500">
+            <div className="clean-card rounded-3xl p-10 mb-12 border border-slate-200 hover:shadow-xl transition-all duration-300 animate-scale-in-elastic animate-delay-500">
               <p className="text-lg md:text-xl text-slate-700 leading-relaxed mb-6 font-normal">
                 كل شيء رقمي... بدون أجهزة ولا برامج معقدة.<br />
                 جاهز باسمك، مع دعم كامل وتصميم مخصص.
               </p>
             </div>
             
-            <div className="flex flex-col items-center lg:items-start gap-8 animate-bounce-in animate-delay-600">
+            <div className="flex flex-col items-center lg:items-start gap-8 animate-scale-in-elastic animate-delay-600">
               <Button 
                 onClick={handleWhatsAppClick}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 text-lg font-medium transition-all duration-300 flex items-center gap-3 rounded-2xl hover:scale-105 shadow-lg hover:shadow-xl"
