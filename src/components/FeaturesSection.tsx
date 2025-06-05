@@ -1,5 +1,5 @@
 
-import { Smartphone, Share2, BarChart3, Shield, Settings } from "lucide-react";
+import { Smartphone, Zap, Send, BarChart3, Shield, HeadphonesIcon } from "lucide-react";
 
 const FeaturesSection = () => {
   const features = [
@@ -9,12 +9,12 @@ const FeaturesSection = () => {
       description: "إصدار، إرسال، متابعة، طباعة - كل شيء من مكان واحد بدون تعقيد أو برامج إضافية."
     },
     {
-      icon: Share2,
+      icon: Zap,
       title: "توفير وقت ومجهود",
       description: "لا أوراق، لا فوضى - وداعًا للفواتير اليدوية والأرشيف الورقي المعقد."
     },
     {
-      icon: Share2,
+      icon: Send,
       title: "خيارات المشاركة والطباعة",
       description: "أرسل فواتيرك عبر واتساب والإيميل، أو اطبعها بجودة احترافية حسب حاجتك."
     },
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
       description: "بياناتك محفوظة آمنًا في السحابة، ويمكنك استرجاعها في أي وقت دون خوف من فقدانها."
     },
     {
-      icon: Settings,
+      icon: HeadphonesIcon,
       title: "إعداد سريع مع دعم شخصي",
       description: "نوفر لك كل الدعم والتدريب حتى تتقن النظام بدون مشاكل."
     }
@@ -53,8 +53,8 @@ const FeaturesSection = () => {
               key={index}
               className="clean-card p-8 rounded-2xl transition-all duration-300 group hover:scale-[1.02] border border-slate-100"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl flex items-center justify-center mb-6 group-hover:from-slate-200 group-hover:to-slate-300 transition-all duration-300">
-                <feature.icon className="w-8 h-8 text-slate-600" strokeWidth={1.5} />
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mb-6 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300">
+                <feature.icon className="w-8 h-8 text-blue-600" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-medium text-slate-800 mb-4 leading-tight">
                 {feature.title}
