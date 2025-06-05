@@ -1,5 +1,5 @@
 
-import { MessageSquare, Menu, X } from "lucide-react";
+import { MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -62,9 +62,9 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-slate-700 hover:bg-slate-800 text-white px-5 py-2 text-sm font-medium transition-colors"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 text-sm font-medium transition-colors"
             >
-              <MessageSquare className="w-4 h-4 ml-2" />
+              <MessageCircle className="w-4 h-4 ml-2" />
               اطلب الآن عبر واتساب
             </Button>
           </div>
@@ -108,9 +108,9 @@ const Header = () => {
               </button>
               <Button 
                 onClick={handleWhatsAppClick}
-                className="bg-slate-700 hover:bg-slate-800 text-white w-full flex items-center justify-center gap-2 py-2 text-sm font-medium mt-2"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white w-full flex items-center justify-center gap-2 py-2 text-sm font-medium mt-2"
               >
-                <MessageSquare className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
                 اطلب الآن عبر واتساب
               </Button>
             </div>
