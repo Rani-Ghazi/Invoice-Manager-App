@@ -15,6 +15,21 @@ const TestimonialsSection = () => {
       business: "مصمم حر",
       comment: "أشتغل من الجوال، والفاتورة تطلع بهويتي الكاملة",
       rating: 5
+    },
+    {
+      business: "محل إلكترونيات",
+      comment: "النظام سهل جداً، حتى الموظفين تعلموه بسرعة",
+      rating: 5
+    },
+    {
+      business: "مكتب استشارات",
+      comment: "التقارير المالية ساعدتني أفهم وضع شركتي بوضوح",
+      rating: 5
+    },
+    {
+      business: "ورشة سيارات",
+      comment: "الدعم الفني ممتاز، دايماً متواجدين لأي استفسار",
+      rating: 5
     }
   ];
 
@@ -30,7 +45,7 @@ const TestimonialsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}

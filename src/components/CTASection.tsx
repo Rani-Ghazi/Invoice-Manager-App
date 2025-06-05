@@ -20,7 +20,7 @@ const CTASection = () => {
           
           <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12 border border-white/20">
             <div className="text-4xl font-light mb-3">80 ريال سنوياً</div>
-            <div className="text-slate-300 font-light text-lg">مرة وحدة وتنساها</div>
+            <div className="text-slate-300 font-light text-lg">اشتراك بسيط وواضح</div>
           </div>
           
           <Button 

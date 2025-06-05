@@ -37,7 +37,7 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="flex flex-col items-center lg:items-start gap-8 mb-10">
+            <div className="flex flex-col items-center lg:items-start gap-8">
               <Button 
                 onClick={handleWhatsAppClick}
                 className="bg-slate-700 hover:bg-slate-800 text-white px-10 py-4 text-lg font-medium transition-all duration-300 flex items-center gap-3 rounded-2xl hover:scale-105 shadow-lg hover:shadow-xl"
@@ -46,19 +46,13 @@ const HeroSection = () => {
                 اطلب الآن عبر واتساب
               </Button>
             </div>
-            
-            <div className="flex justify-center lg:justify-start">
-              <span className="inline-flex items-center clean-card text-slate-700 px-8 py-4 rounded-2xl text-xl font-medium border border-slate-200">
-                💵 80 ريال سنوياً – أرخص نظام فواتير في السوق
-              </span>
-            </div>
           </div>
 
           {/* Image */}
           <div className="relative lg:order-first">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/lovable-uploads/c241d669-23cd-4848-a379-2a3485b83c3a.png" 
+                src="/lovable-uploads/29886080-cb9d-403c-ac79-4d7484a756e9.png" 
                 alt="نظام فواتير إلكترونية احترافي"
                 className="w-full h-auto object-cover"
               />

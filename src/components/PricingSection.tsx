@@ -21,10 +21,10 @@ const PricingSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium text-slate-800 mb-4">
-            لا اشتراكات، <span className="text-slate-600">لا دفعات متكررة</span>
+            اشتراك سنوي، <span className="text-slate-600">بدون تعقيدات</span>
           </h2>
           <p className="text-lg text-slate-600 font-normal">
-            80 ريال سنوياً - مرة وحدة وتنساها
+            80 ريال سنوياً فقط
           </p>
         </div>
         
@@ -42,9 +42,6 @@ const PricingSection = () => {
               </div>
               <div className="text-slate-600 text-lg font-normal">
                 اشتراك سنوي
-              </div>
-              <div className="text-slate-500 mt-1 text-sm">
-                مرة وحدة وتنساها
               </div>
             </div>
             
