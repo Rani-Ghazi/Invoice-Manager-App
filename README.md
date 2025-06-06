@@ -1,8 +1,3 @@
-from pathlib import Path
-
-# Content for the README file
-readme_content = """# 💼 Invoice Manager Project
-
 ## 📄 About the Project
 
 **Invoice Manager** is a responsive web application designed to streamline invoicing for small businesses in Oman and the Gulf. It offers a simple, professional interface for creating, managing, and sending electronic invoices—no monthly fees, just a one-time setup and full support.
