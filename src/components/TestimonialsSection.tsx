@@ -2,6 +2,21 @@
 const TestimonialsSection = () => {
   const testimonials = [
     {
+      business: "شركة تقنية معلومات",
+      comment: "النظام ساعدنا ننظم فواتيرنا بشكل احترافي ووفر علينا وقت كبير",
+      rating: 5
+    },
+    {
+      business: "شركة تسويق",
+      comment: "العملاء انبهروا بشكل الفواتير الجديد وصار الدفع أسرع",
+      rating: 5
+    },
+    {
+      business: "معرض أبواب ونوافذ",
+      comment: "الفاتورة تطلع بشعار المعرض وتبدو مثل الشركات الكبيرة",
+      rating: 5
+    },
+    {
       business: "شركة مقاولات",
       comment: "كنت أتعب مع الفواتير اليدوية، الآن كل شيء جاهز خلال دقائق",
       rating: 5
@@ -49,7 +64,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="clean-card p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-500 hover:scale-[1.03] hover:shadow-xl animate-slide-up-bounce group"
+              className="clean-card p-8 rounded-2xl border border-slate-100 hover:border-blue-200 transition-all duration-500 hover:scale-[1.03] hover:shadow-xl animate-slide-up-bounce group"
               style={{animationDelay: `${0.1 + index * 0.1}s`}}
             >
               <div className="flex items-center mb-6">

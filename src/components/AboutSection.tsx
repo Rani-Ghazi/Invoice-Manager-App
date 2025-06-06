@@ -22,10 +22,10 @@ const AboutSection = () => {
               
               <div className="flex-1 text-center md:text-right">
                 <h3 className="text-2xl font-medium text-slate-800 mb-4">
-                  فريق تقني مستقل متخصص
+                  فريق مستقل متخصص
                 </h3>
                 <p className="text-slate-700 leading-relaxed mb-4 font-normal">
-                  نحن فريق من المطورين المتخصصين في تطوير الحلول الرقمية لأصحاب الأعمال الصغيرة والمتوسطة.
+                  نحن فريق مستقل متخصص في تقديم حلول فواتير إلكترونية مخصصة لأصحاب الأعمال في عمان ودول الخليج.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-6 font-normal">
                   هدفنا هو تبسيط العمليات التجارية وجعلها أكثر احترافية من خلال أنظمة رقمية عملية وسهلة الاستخدام.
@@ -34,7 +34,7 @@ const AboutSection = () => {
                   <span className="bg-slate-100 text-slate-700 px-4 py-2 rounded-full font-medium text-sm">
                     🏢 أكثر من 500 عميل
                   </span>
-                  <span className="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full font-medium text-sm">
+                  <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium text-sm">
                     ⭐ تقييم 5/5
                   </span>
                   <span className="bg-slate-100 text-slate-700 px-4 py-2 rounded-full font-medium text-sm">

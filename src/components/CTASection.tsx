@@ -19,13 +19,13 @@ const CTASection = () => {
           </p>
           
           <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12 border border-white/20 animate-scale-in animate-delay-300 hover:scale-[1.02] transition-all duration-500 hover-glow">
-            <div className="text-4xl font-light mb-3 hover:text-emerald-300 transition-colors duration-300">80 ريال سنوياً</div>
+            <div className="text-4xl font-light mb-3 hover:text-blue-300 transition-colors duration-300">80 ريال عماني سنوياً</div>
             <div className="text-slate-300 font-light text-lg">اشتراك بسيط وواضح</div>
           </div>
           
           <Button 
             onClick={handleWhatsAppClick}
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 text-lg font-medium transition-all duration-500 flex items-center gap-3 mx-auto mb-10 rounded-2xl hover:scale-110 shadow-lg hover:shadow-2xl animate-bounce-in animate-delay-500"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-medium transition-all duration-500 flex items-center gap-3 mx-auto mb-10 rounded-2xl hover:scale-110 shadow-lg hover:shadow-2xl animate-bounce-in animate-delay-500"
           >
             <MessageSquare className="w-6 h-6 transition-transform duration-300 hover:scale-110" strokeWidth={1.5} />
             تواصل معنا الآن

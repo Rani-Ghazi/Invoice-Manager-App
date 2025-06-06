@@ -31,13 +31,13 @@ const PricingSection = () => {
         <div className="max-w-md mx-auto">
           <div className="feature-card rounded-2xl p-8 relative animate-scale-in animate-delay-200 hover:scale-[1.02] transition-all duration-500 hover:shadow-2xl hover-glow">
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 animate-bounce-in animate-delay-400">
-              <span className="bg-emerald-500 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-emerald-600 transition-colors duration-300">
+              <span className="bg-blue-500 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-blue-600 transition-colors duration-300">
                 العرض الأفضل
               </span>
             </div>
             
             <div className="text-center mb-8 animate-fade-in animate-delay-300">
-              <div className="text-5xl font-medium text-slate-800 mb-3 hover:text-emerald-600 transition-colors duration-500">
+              <div className="text-5xl font-medium text-slate-800 mb-3 hover:text-blue-600 transition-colors duration-500">
                 80 ريال عماني
               </div>
               <div className="text-slate-600 text-lg font-normal">
@@ -52,7 +52,7 @@ const PricingSection = () => {
               <ul className="space-y-3">
                 {includes.map((item, index) => (
                   <li key={index} className="flex items-center text-slate-700 font-normal text-sm animate-slide-in-right hover:text-slate-800 transition-colors duration-300" style={{animationDelay: `${0.5 + index * 0.1}s`}}>
-                    <CheckCircle className="text-emerald-500 ml-3 w-4 h-4 hover:scale-110 transition-transform duration-300" />
+                    <CheckCircle className="text-blue-500 ml-3 w-4 h-4 hover:scale-110 transition-transform duration-300" />
                     {item}
                   </li>
                 ))}
@@ -61,7 +61,7 @@ const PricingSection = () => {
             
             <Button 
               onClick={handleWhatsAppClick}
-              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-base font-medium transition-all duration-500 flex items-center justify-center gap-3 hover:scale-105 hover:shadow-xl animate-bounce-in animate-delay-600"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-base font-medium transition-all duration-500 flex items-center justify-center gap-3 hover:scale-105 hover:shadow-xl animate-bounce-in animate-delay-600"
             >
               <MessageSquare className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               احصل على نظامك الآن

@@ -20,9 +20,9 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-slate-800 mb-8 leading-tight hover:scale-[1.02] transition-transform duration-500 animate-slide-up-bounce animate-delay-200">
-              فواتير إلكترونية باسم نشاطك...{" "}
-              <span className="text-slate-600 font-normal">
-                بشكل احترافي وسهل
+              حوّل فواتيرك إلى إلكترونية{" "}
+              <span className="text-blue-600 font-normal">
+                بسهولة واحترافية
               </span>
             </h1>
             
@@ -37,14 +37,24 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="flex flex-col items-center lg:items-start gap-8 animate-scale-in-elastic animate-delay-600">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6 animate-scale-in-elastic animate-delay-600">
               <Button 
                 onClick={handleWhatsAppClick}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 text-lg font-medium transition-all duration-300 flex items-center gap-3 rounded-2xl hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-medium transition-all duration-300 flex items-center gap-3 rounded-2xl hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 <MessageSquare className="w-6 h-6" strokeWidth={1.5} />
                 اطلب الآن عبر واتساب
               </Button>
+              
+              <div className="flex items-center gap-4 text-slate-600">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">متاح الآن</span>
+                </div>
+                <div className="text-sm">
+                  إعداد فوري في 24 ساعة
+                </div>
+              </div>
             </div>
           </div>
 
@@ -56,6 +66,9 @@ const HeroSection = () => {
                 alt="نظام فواتير إلكترونية احترافي"
                 className="w-full h-auto object-cover"
               />
+              {/* Floating elements for modern look */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/15 rounded-full blur-2xl animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>

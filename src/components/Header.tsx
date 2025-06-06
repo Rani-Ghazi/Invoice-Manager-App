@@ -1,5 +1,5 @@
 
-import { MessageSquare, Menu, X, Receipt } from "lucide-react";
+import { MessageSquare, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -24,8 +24,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <Receipt className="text-white w-5 h-5" strokeWidth={2} />
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img 
+                src="/lovable-uploads/e07b0289-6b04-4760-990f-7f884899e3fd.png" 
+                alt="Invoice Manager Logo"
+                className="w-8 h-8 object-contain"
+              />
             </div>
             <div className="text-lg font-medium text-slate-800">Invoice Manager</div>
           </div>
@@ -62,7 +66,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 text-sm font-medium transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 text-sm font-medium transition-colors"
             >
               <MessageSquare className="w-4 h-4 ml-2" />
               اطلب الآن عبر واتساب
@@ -108,7 +112,7 @@ const Header = () => {
               </button>
               <Button 
                 onClick={handleWhatsAppClick}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white w-full flex items-center justify-center gap-2 py-2 text-sm font-medium mt-2"
+                className="bg-blue-600 hover:bg-blue-700 text-white w-full flex items-center justify-center gap-2 py-2 text-sm font-medium mt-2"
               >
                 <MessageSquare className="w-4 h-4" />
                 اطلب الآن عبر واتساب
