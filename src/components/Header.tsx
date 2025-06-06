@@ -24,13 +24,6 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <img 
-                src="/lovable-uploads/710d875a-d582-4ee3-bc44-393d55d0d354.png" 
-                alt="Invoice Manager Logo"
-                className="w-8 h-8 object-contain"
-              />
-            </div>
             <div className="text-lg font-medium text-slate-800">Invoice Manager</div>
           </div>
 
