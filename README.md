@@ -10,7 +10,7 @@
 
 ## 🌐 Live Demo
 
-**Visit the project**: [https://invoicemanager.netlify.app/](https://invoicemanager.netlify.app/)
+**Visit the project**: [https://invoicemanagerapp.netlify.app/](https://invoicemanagerapp.netlify.app/)
 
 ---
 
