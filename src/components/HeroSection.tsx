@@ -1,5 +1,5 @@
 
-import { MessageCircle } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 onClick={handleWhatsAppClick}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 text-lg font-medium transition-all duration-300 flex items-center gap-3 rounded-2xl hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                <MessageCircle className="w-6 h-6" strokeWidth={1.5} />
+                <MessageSquare className="w-6 h-6" strokeWidth={1.5} />
                 اطلب الآن عبر واتساب
               </Button>
             </div>

@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const CTASection = () => {
   const handleWhatsAppClick = () => {
@@ -27,7 +27,7 @@ const CTASection = () => {
             onClick={handleWhatsAppClick}
             className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 text-lg font-medium transition-all duration-500 flex items-center gap-3 mx-auto mb-10 rounded-2xl hover:scale-110 shadow-lg hover:shadow-2xl animate-bounce-in animate-delay-500"
           >
-            <MessageCircle className="w-6 h-6 transition-transform duration-300 hover:scale-110" strokeWidth={1.5} />
+            <MessageSquare className="w-6 h-6 transition-transform duration-300 hover:scale-110" strokeWidth={1.5} />
             تواصل معنا الآن
           </Button>
           

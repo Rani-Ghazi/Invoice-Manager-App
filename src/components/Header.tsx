@@ -1,5 +1,5 @@
 
-import { WhatsappIcon, Menu, X, Receipt } from "lucide-react";
+import { MessageSquare, Menu, X, Receipt } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -64,7 +64,7 @@ const Header = () => {
               onClick={handleWhatsAppClick}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 text-sm font-medium transition-colors"
             >
-              <WhatsappIcon className="w-4 h-4 ml-2" />
+              <MessageSquare className="w-4 h-4 ml-2" />
               اطلب الآن عبر واتساب
             </Button>
           </div>
@@ -110,7 +110,7 @@ const Header = () => {
                 onClick={handleWhatsAppClick}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white w-full flex items-center justify-center gap-2 py-2 text-sm font-medium mt-2"
               >
-                <WhatsappIcon className="w-4 h-4" />
+                <MessageSquare className="w-4 h-4" />
                 اطلب الآن عبر واتساب
               </Button>
             </div>

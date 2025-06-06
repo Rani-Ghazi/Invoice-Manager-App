@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { WhatsappIcon, CheckCircle } from "lucide-react";
+import { MessageSquare, CheckCircle } from "lucide-react";
 
 const PricingSection = () => {
   const handleWhatsAppClick = () => {
@@ -63,7 +63,7 @@ const PricingSection = () => {
               onClick={handleWhatsAppClick}
               className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 text-base font-medium transition-all duration-500 flex items-center justify-center gap-3 hover:scale-105 hover:shadow-xl animate-bounce-in animate-delay-600"
             >
-              <WhatsappIcon className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
+              <MessageSquare className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               احصل على نظامك الآن
             </Button>
           </div>
