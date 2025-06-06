@@ -1,5 +1,5 @@
 
-import { MessageCircle, Menu, X } from "lucide-react";
+import { WhatsappIcon, Menu, X, Receipt } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -24,8 +24,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-slate-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-semibold text-sm">IM</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <Receipt className="text-white w-5 h-5" strokeWidth={2} />
             </div>
             <div className="text-lg font-medium text-slate-800">Invoice Manager</div>
           </div>
@@ -64,7 +64,7 @@ const Header = () => {
               onClick={handleWhatsAppClick}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 text-sm font-medium transition-colors"
             >
-              <MessageCircle className="w-4 h-4 ml-2" />
+              <WhatsappIcon className="w-4 h-4 ml-2" />
               اطلب الآن عبر واتساب
             </Button>
           </div>
@@ -110,7 +110,7 @@ const Header = () => {
                 onClick={handleWhatsAppClick}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white w-full flex items-center justify-center gap-2 py-2 text-sm font-medium mt-2"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsappIcon className="w-4 h-4" />
                 اطلب الآن عبر واتساب
               </Button>
             </div>

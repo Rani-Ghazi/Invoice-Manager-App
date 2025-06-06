@@ -51,7 +51,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="clean-card p-8 rounded-2xl transition-all duration-500 group hover:scale-[1.05] border border-slate-100 animate-scale-in-elastic hover:shadow-2xl hover-glow"
+              className="feature-card p-8 rounded-2xl transition-all duration-500 group hover:scale-[1.05] border border-slate-100 animate-scale-in-elastic hover:shadow-2xl"
               style={{animationDelay: `${0.2 + index * 0.1}s`}}
             >
               <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mb-6 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">

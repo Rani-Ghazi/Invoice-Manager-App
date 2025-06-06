@@ -8,7 +8,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "هل النظام يحتاج اشتراك سنوي؟",
-      answer: "نعم، النظام يعمل بنظام الاشتراك السنوي بـ 80 ريال فقط، مما يضمن لك الحصول على أحدث التحديثات والدعم المستمر."
+      answer: "نعم، النظام يعمل بنظام الاشتراك السنوي بـ 80 ريال عماني فقط، مما يضمن لك الحصول على أحدث التحديثات والدعم المستمر."
     },
     {
       question: "ماذا يشمل الاشتراك السنوي؟",
@@ -17,6 +17,10 @@ const FAQSection = () => {
     {
       question: "أقدر أطبع الفاتورة؟",
       answer: "نعم، يمكنك طباعة الفاتورة أو إرسالها كملف PDF عبر الواتساب أو الإيميل."
+    },
+    {
+      question: "هل النظام يعمل على كل المنصات والأجهزة؟",
+      answer: "نعم، النظام يعمل عبر الإنترنت ويمكن الوصول إليه من أي جهاز - هواتف ذكية، أجهزة لوحية، لابتوب، كمبيوترات مكتبية. فقط تحتاج للاتصال بالإنترنت."
     },
     {
       question: "هل النظام يدعم العربية؟",
@@ -52,7 +56,7 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="clean-card rounded-xl mb-3 overflow-hidden animate-fade-in hover:scale-[1.02] transition-all duration-300"
+              className="feature-card rounded-xl mb-3 overflow-hidden animate-fade-in hover:scale-[1.02] transition-all duration-300"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <button
